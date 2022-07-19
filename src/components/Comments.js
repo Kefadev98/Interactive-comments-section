@@ -25,13 +25,13 @@ const Comments = ({
       event.preventDefault();
       setEditReply(reply.id);
     }
-    //Funkcija uz pomoc koje određujem na koji komentar zelim da odgovorim
+
     const handleReply = (event, comment) => {
       event.preventDefault();
       setReplyComment(comment.id)
       console.log(id);
     }
-    //Delete request za komentar koji zelim da obrisem
+
     const handleDelete = () => {
       fetch("http://localhost:8000/comments/" + id, {
           method: 'DELETE'
