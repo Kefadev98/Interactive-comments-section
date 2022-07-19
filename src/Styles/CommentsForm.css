@@ -1,0 +1,109 @@
+.comments__form {
+  width: 730px;
+  height: 144px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments__form {
+    width: 60%;
+    height: 190px;
+    -webkit-transform: translateX(33%);
+            transform: translateX(33%);
+    margin-bottom: 30px;
+  }
+}
+
+.comments__form img {
+  margin-top: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments__form img {
+    -webkit-transform: translate(130%, 230%);
+            transform: translate(130%, 230%);
+  }
+}
+
+.comments__form textarea {
+  margin-top: 20px;
+  width: 506px;
+  height: 96px;
+  border: 1px solid #e6e1e1;
+  border-radius: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1rem;
+  resize: none;
+  padding: 15px;
+  color: #67727E;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments__form textarea {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+}
+
+.comments__form textarea::-webkit-input-placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.comments__form textarea:-ms-input-placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.comments__form textarea::-ms-input-placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.comments__form textarea::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.comments__form button {
+  margin-top: 20px;
+  width: 104px;
+  height: 48px;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #5457b6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments__form button {
+    -webkit-transform: translate(-80%, 220%);
+            transform: translate(-80%, 220%);
+    width: 130px;
+  }
+}
+
+.comments__form button:hover {
+  background-color: #c3c4ef;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=CommentsForm.css.map */

@@ -1,0 +1,218 @@
+.comments {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.comments .comments__body {
+  width: 730px;
+  height: 167px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body {
+    width: 60%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.comments .comments__body .comments__main {
+  width: 630px;
+  height: 100px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info {
+    width: auto;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info--user {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info--user {
+    width: 50%;
+    margin-left: 30px;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info--user img {
+  width: 35px;
+  height: 35px;
+}
+
+.comments .comments__body .comments__main .comments__info--user h4 {
+  color: #334253;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info--user h4 {
+    font-size: 0.8rem;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info--user h5 {
+  color: #67727E;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info--user h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info .comments__header--badge .reply {
+  width: 90px;
+  height: 24px;
+  margin: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: none;
+  color: #5457b6;
+  background-color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comments .comments__body .comments__main .comments__info .comment__update--badge .delete {
+  width: 82px;
+  height: 19px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #FFFFFF;
+  color: #ed6468;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info .comment__update--badge .delete {
+    font-size: 0.9rem;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info .comment__update--badge .delete img {
+  margin-right: 5px;
+}
+
+.comments .comments__body .comments__main .comments__info .comment__update--badge .edit {
+  width: 82px;
+  height: 19px;
+  margin: 20px 20px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #FFFFFF;
+  color: #5457b6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__info .comment__update--badge .edit {
+    font-size: 0.9rem;
+    margin: 27px 15px 0 -10px;
+  }
+}
+
+.comments .comments__body .comments__main .comments__info .comment__update--badge .edit img {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comments .comments__body .comments__main .comments__description {
+    width: auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.comments .comments__body .comments__main .comments__description p {
+  width: 90%;
+  margin-top: 15px;
+  color: #67727E;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=Comments.css.map */

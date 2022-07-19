@@ -1,0 +1,31 @@
+.comment__vote {
+    width: 45px;
+    height: 110px;
+    background-color: #F2F2F2;
+    transform: translateY(20px);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.6rem;
+    @media screen and (max-width: 767px) and (min-width: 400px) {
+        width: 110px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        transform: translateY(-20px);
+    }
+
+    &--up, &--down {
+        cursor: pointer;
+    }
+    .score {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #5357B6;
+    }
+    
+}

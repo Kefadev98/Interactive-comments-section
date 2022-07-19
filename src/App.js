@@ -1,23 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment, useEffect } from 'react';
+import { useState } from 'react';
+import './App.scss';
+import Comments from './components/Comments';
+import CommentsEdit from './components/CommentsEdit';
+import CommentsForm from './components/CommentsForm';
+import data from "./data.json";
 
 function App() {
+
+  const [comments, setComments] = useState([])
+  const [editComment, setEditComment] = useState(null) 
+
+  const handleEdited = (event, comment) => {
+    event.preventDefault();
+    setEditComment(comment.id);
+  }
+
+  useEffect(() => {
+    console.log(data)
+    fetch("http://localhost:8000/comments?_embed=replies")
+    .then(res => res.json())
+    .then(data => setComments(data))
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {comments.map(comment => (
+        <Fragment key={comment.id}>
+
+          {editComment === comment.id ? 
+          <CommentsEdit 
+           id={comment.id} 
+           setEditComment={setEditComment}
+           content={comment.content}
+          /> 
+          : 
+          <Comments 
+          key={comment.id}
+          image={comment.user.image.png}
+          username={comment.user.username}
+          createdAt={comment.createdAt}
+          content={comment.content}
+          votes={comment.score}
+          on={comment.on}
+          comment={comment}
+          id={comment.id}
+          handleEdited={handleEdited}
+         />
+          } 
+        </Fragment>
+      ))}
+      
+      <CommentsForm 
+       submitLabel="Send"
+      />
     </div>
   );
 }

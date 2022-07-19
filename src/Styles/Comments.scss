@@ -1,0 +1,150 @@
+.comments {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media screen and (max-width: 767px) and (min-width: 400px) {
+        display: flex;
+        align-items: center;
+    }
+
+    .comments__body {
+        width: 730px;
+        height: 167px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 0.6rem;
+        @media screen and (max-width: 767px) and (min-width: 400px) {
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .comments__main {
+            width: 630px;
+            height: 100px;
+            @media screen and (max-width: 767px) and (min-width: 400px) {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .comments__info {
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 767px) and (min-width: 400px) {
+                    width: auto;
+                }
+        
+                &--user {
+                    width: 250px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    @media screen and (max-width: 767px) and (min-width: 400px) {
+                        width: 50%;
+                        margin-left: 30px;
+                    }
+        
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+            
+                    h4 {
+                        color: #334253;
+                        font-size: 1.1rem;
+                        @media screen and (max-width: 767px) and (min-width: 400px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+            
+                    h5 {
+                        color: #67727E;
+                        font-size: 1.1rem;
+                        font-weight: 200;
+                        @media screen and (max-width: 767px) and (min-width: 400px) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .comments__actions {
+                    .reply {
+                        width: 90px;
+                        height: 24px;
+                        margin: 20px 20px 0 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        border: none;
+                        color: hsl(238, 40%, 52%);
+                        background-color: #FFFFFF;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        cursor: pointer;
+
+                    }
+                }
+                .comment__actions {
+                    .delete {
+                        width: 82px;
+                        height: 19px;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        border: none;
+                        background-color: #FFFFFF;
+                        color: hsl(358, 79%, 66%);
+                        cursor: pointer;
+                        @media screen and (max-width: 767px) and (min-width: 400px) {
+                            font-size: 0.9rem;
+                        }
+                        
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+    
+                    .edit {
+                        width: 82px;
+                        height: 19px;
+                        margin: 20px 20px 0 0;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        border: none;
+                        background-color: #FFFFFF;
+                        color: hsl(238, 40%, 52%);
+                        cursor: pointer;
+                        @media screen and (max-width: 767px) and (min-width: 400px) {
+                            font-size: 0.9rem;
+                            margin: 27px 15px 0 -10px;
+                        }
+                        
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .comments__description {
+                @media screen and (max-width: 767px) and (min-width: 400px) {
+                    width: auto;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    width: 90%;
+                    margin-top: 15px;
+                    color: #67727E;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+}

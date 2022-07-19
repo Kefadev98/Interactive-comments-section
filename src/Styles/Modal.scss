@@ -1,0 +1,62 @@
+.modal__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    .modal__container {
+       width: 400px;
+       height: 252px;
+       background-color: #FFFFFF;
+       border-radius: 0.5rem;
+   
+       h2 {
+           margin: 30px 0 0 30px;
+           color: #334253;
+       }
+       
+       p {
+           margin: 30px 0 0 30px;
+           color: #67727E;
+           width: 90%;
+           font-size: 1.1rem;
+       }
+   
+       .modal__footer {
+           margin: 30px 0 0 30px;
+   
+           &--cancel {
+               width: 161px;
+               height: 48px;
+               background-color: hsl(211, 10%, 45%);
+               border: none;
+               border-radius: 0.3rem;
+               font-size: 1.1rem;
+               font-weight: 600;
+               text-transform: uppercase;
+               color: #FFFFFF;
+               margin-right: 20px;
+               cursor: pointer;
+           }
+   
+           &--delete {
+   
+               width: 161px;
+               height: 48px;
+               background-color: hsl(358, 79%, 66%);
+               border: none;
+               border-radius: 0.3rem;
+               font-size: 1.1rem;
+               font-weight: 600;
+               text-transform: uppercase;
+               color: #FFFFFF;
+               cursor: pointer;
+           }
+       }
+    }
+   }

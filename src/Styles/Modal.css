@@ -1,0 +1,68 @@
+.modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__background .modal__container {
+  width: 400px;
+  height: 252px;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+
+.modal__background .modal__container h2 {
+  margin: 30px 0 0 30px;
+  color: #334253;
+}
+
+.modal__background .modal__container p {
+  margin: 30px 0 0 30px;
+  color: #67727E;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.modal__background .modal__container .modal__footer {
+  margin: 30px 0 0 30px;
+}
+
+.modal__background .modal__container .modal__footer--cancel {
+  width: 161px;
+  height: 48px;
+  background-color: #67727e;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.modal__background .modal__container .modal__footer--delete {
+  width: 161px;
+  height: 48px;
+  background-color: #ed6468;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Modal.css.map */

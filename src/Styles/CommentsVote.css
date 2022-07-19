@@ -1,0 +1,56 @@
+.comment__vote {
+  width: 45px;
+  height: 110px;
+  background-color: #F2F2F2;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .comment__vote {
+    width: 110px;
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+.comment__vote--up, .comment__vote--down {
+  cursor: pointer;
+}
+
+.comment__vote .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  color: #5357B6;
+}
+/*# sourceMappingURL=CommentsVote.css.map */
