@@ -7,10 +7,7 @@ import CommentsForm from "./components/Form/CommentsForm";
 import data from "./data/data.json";
 
 function App() {
-  const commentsFromData = localStorage.getItem("comments")
-    ? JSON.parse(localStorage.getItem("comments"))
-    : null;
-  const [comments, setComments] = useState([commentsFromData]);
+  const [comments, setComments] = useState([]);
   const [editComment, setEditComment] = useState(null);
 
   const handleEdited = (event, comment) => {

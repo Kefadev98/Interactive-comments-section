@@ -71,21 +71,6 @@
         },
         "username": "juliusomo"
       }
-    },
-    {
-      "id": "nrOawFcg9APesuaxvsn3G",
-      "commentId": 1,
-      "on": false,
-      "content": "hahahhaha\n",
-      "createdAt": "a moment ago",
-      "score": 0,
-      "user": {
-        "image": {
-          "png": "./images/avatars/image-juliusomo.png",
-          "webp": "./images/avatars/image-juliusomo.webp"
-        },
-        "username": "juliusomo"
-      }
     }
   ]
 }
